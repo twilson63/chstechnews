@@ -1,6 +1,6 @@
 {
   "name": "chstechnews",
-  "version": "0.0.2-3",
+  "version": "0.0.3",
   "dependencies": {
     "union": "~0.3.4",
     "flatiron": "~0.2.8",
@@ -11,7 +11,10 @@
   "scripts": {
     "start": "server.js"
   },
-  "engines": "0.8",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
   "subdomain": "chstechnews",
   "domains": [
     "chstechnews.com",
