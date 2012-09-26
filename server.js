@@ -5,7 +5,8 @@ var flatiron = require('flatiron'),
   es = require('event-stream'),
   prospect = require('./prospect');
 
-var COUCH = process.env.COUCH || 'http://localhost:5984/chstechnews';
+var COUCH = process.env.COUCH;
+//var COUCH = 'https://chsadmin:rocks@technews.iriscouch.com:6984/chs';
 app.use(flatiron.plugins.http);
 
 app.http.before = [
