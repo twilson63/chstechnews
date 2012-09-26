@@ -1,6 +1,6 @@
 {
   "name": "chstechnews",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "union": "~0.3.4",
     "flatiron": "~0.2.8",
