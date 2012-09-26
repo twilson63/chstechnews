@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>chstechnews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/images/bam.ico">
+    <link rel="apple-touch-icon" href="/images/bootstrap-apple-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/bootstrap-apple-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/bootstrap-apple-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">ChsTechNews</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+        
+      </div>
+    </div>
+
+    <section class="container" ng-app>
+      <div class="row">
+        <div class="span6 offset1">
+          <div class="hero-unit">
+            <h1>CHS Tech News</h1>
+            <p>Tech News and Events in Charleston, SC</p>
+          </div>
+
+          <h3><i class="icon-wrench"></i>CHS Tech News</h3> 
+          <p>A peer announcement site for news and events in Charleston Technology!  As a member you will be able to post links, vote up and vote down links, and provide commentary on links.</p>
+          <p>Built for the the Charleston Technical Community!</p>
+        </div>
+        <div class="span4" ng-controller="EmailCtrl">
+          <img src="/img/coming-soon.jpg"></img>
+          <form class="form-horizontal">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-envelope"></i></span>
+              <input class="span2" id="inputIcon" type="email" ng-model="email" placeholder="email address" required>
+            </div>
+            <button class="btn btn-primary" ng-click="NotifyMe()">Notify Me!</button>
+          </form>
+          <h2>I want to be in the loop.</h2>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.2/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+
+  </body>
+</html>
