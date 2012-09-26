@@ -2,16 +2,14 @@
   "name": "chstechnews",
   "version": "0.0.1",
   "dependencies": {
-    "filed": "0.0.5",
     "union": "~0.3.4",
     "flatiron": "~0.2.8",
     "ecstatic": "~0.1.6",
-    "connect": "~2.4.6",
     "request": "~2.11.4",
     "event-stream": "~3.0.5"
   },
   "scripts": {
     "start": "server.js"
   },
-  "engines": "0.6 || 0.7 || 0.8"
+  "engines": "0.8"
 }
