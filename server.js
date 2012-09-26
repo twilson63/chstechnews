@@ -6,7 +6,6 @@ var flatiron = require('flatiron'),
   prospect = require('./prospect');
 
 var COUCH = process.env.COUCH;
-//var COUCH = 'https://chsadmin:rocks@technews.iriscouch.com:6984/chs';
 app.use(flatiron.plugins.http);
 
 app.http.before = [
@@ -18,7 +17,8 @@ app.router.post('/prospects', function(){
     this.req,
     prospect(),
     request.post(COUCH, { json: true}),
-    this.res);
+    this.res
+  );
 });
 
 app.start(3000);
