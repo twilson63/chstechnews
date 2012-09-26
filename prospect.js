@@ -6,5 +6,5 @@ module.exports = function() {
     doc.type = 'Prospect';
     doc.createdAt = new Date();
     cb(null, JSON.stringify(doc));
-    });
+  });
 }

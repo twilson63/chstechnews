@@ -16,16 +16,13 @@
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/images/bam.ico">
     <link rel="apple-touch-icon" href="/images/bootstrap-apple-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/bootstrap-apple-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/bootstrap-apple-114x114.png">
   </head>
-
   <body>
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -38,14 +35,11 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              
             </ul>
           </div><!--/.nav-collapse -->
         </div>
-        
       </div>
     </div>
-
     <section class="container" ng-app>
       <div class="row">
         <div class="span6 offset1">
@@ -60,10 +54,15 @@
         </div>
         <div class="span4" ng-controller="EmailCtrl">
           <img src="/img/coming-soon.jpg"></img>
-          <div class="alert alert-error" ng-show="error">
+          <div class="alert alert-error" ng-show="error" style="display: none;">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            <h4>Error Occurred</h4> 
+            <h4>Error Occurred!</h4> 
             <p>with saving your Email Address! <br />Please contact <a href="mailto://admin@jackhq.com">admin@jackhq.com</a></p>
+          </div>
+          <div class="alert alert-success" ng-show="success" style="display: none;">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4>Thank You!</h4> 
+            <p>You are on the list!</p>
           </div>
           <form class="form-horizontal">
             <div class="input-prepend">
@@ -89,6 +88,19 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.2/angular.min.js"></script>
     <script src="/js/app.js"></script>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '50636351613f5d2a5f0000df');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>
