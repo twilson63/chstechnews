@@ -3,9 +3,9 @@ var flatiron = require('flatiron'),
   ecstatic = require('ecstatic'),
   request = require('request'),
   es = require('event-stream'),
-  prospect = require('./prospect');
+  createProspect = require('./prospect'),
+  saveProspect = require('./saveProspect');
 
-var COUCH = process.env.COUCH;
 app.use(flatiron.plugins.http);
 
 app.http.before = [
@@ -15,8 +15,8 @@ app.http.before = [
 app.router.post('/prospects', function(){
   es.pipeline(
     this.req,
-    prospect(),
-    request.post(COUCH, { json: true}),
+    createProspect(),
+    saveProspect(),
     this.res
   );
 });
